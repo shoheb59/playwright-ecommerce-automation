@@ -32,7 +32,7 @@ test.describe('10 unique test cases',()=> {
 
     });
 
-    test.only('TC 2: Verify user login', async ({page})=> {
+    test('TC 2: Verify user login', async ({page})=> {
         const loginobject = new LoginPage(page);
 
         await loginobject.openUrl();
@@ -42,7 +42,7 @@ test.describe('10 unique test cases',()=> {
         await loginobject.clickSignIn();
         await loginobject.verifyUserName('id674');
         await page.pause();
-        
+
     
 
     });
